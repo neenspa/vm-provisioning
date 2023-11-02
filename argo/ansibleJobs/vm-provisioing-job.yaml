@@ -1,0 +1,10 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: vm-provisioing-job
+  namespace: aap
+spec:
+  connection_secret: aapaccess
+  job_template_name: VM_Provisioning
+  extra_vars: 
